@@ -12,6 +12,32 @@ import { PlotStorageInfoComponent } from './components/plot-storage-info/plot-st
 import { PlotSinglecellHistComponent } from './components/plot-singlecell-hist/plot-singlecell-hist.component';
 import { SamplePoolingComponent } from './components/sample-pooling/sample-pooling.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ReactiveFormsModule } from '@angular/forms';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import {  MatPaginatorModule,
+          MatSortModule,
+        } from "@angular/material";
+
+import 'hammerjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +48,29 @@ import { SamplePoolingComponent } from './components/sample-pooling/sample-pooli
     PlotSeqrunCountComponent,
     PlotStorageInfoComponent,
     PlotSinglecellHistComponent,
-    SamplePoolingComponent
+    SamplePoolingComponent,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    FlexLayoutModule,
+    FormsModule,
+    MatToolbarModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatProgressSpinnerModule,
+    ReactiveFormsModule,
+    GoogleChartsModule.forRoot(),
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   imports: [
     BrowserModule,
