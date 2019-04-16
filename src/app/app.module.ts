@@ -49,6 +49,10 @@ import 'hammerjs';
     PlotStorageInfoComponent,
     PlotSinglecellHistComponent,
     SamplePoolingComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
     FlexLayoutModule,
@@ -71,10 +75,6 @@ import 'hammerjs';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
