@@ -1,3 +1,25 @@
-<p>
-  plot-seqrun-count works!
-</p>
+<mat-card fxFlex>
+  <div *ngIf="data">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+        <h3>Sequencing runs</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <google-chart #chart
+        [title]="title"
+        [type]="type"
+        [data]="data"
+        [columnNames]="columnNames"
+        [options]="options"
+        [width]="width"
+        [height]="height">
+      </google-chart>
+      <p>Plot showing number of sequencing runs per month</p>
+    </mat-card-content>
+  </div>
+  <div [hidden]="data">
+    <mat-spinner></mat-spinner><h4>Loading ... Please wait!</h4>
+  </div>
+</mat-card>
